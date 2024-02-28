@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+
+{% block title_block %}Category Page {% endblock %}
+
+{%block content_block%}
+
+{% for technology in technology %}
+
+    <div class="card" style="width: 18rem;">
+        <img src="media\blogpost_images\BlogIntroImage.jpg" class="card-img-top" alt="aayena haii">
+        <div class="card-body">
+        <h5 class="card-title">{{technology.title}}</h5>
+        <p class="card-text">{{technology.description}}</p>
+        <a href="#" class="btn btn-primary">View more</a>
+        </div>
+    </div>
+{% endfor %}
+
+{%endblock%}
